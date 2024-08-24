@@ -1,48 +1,32 @@
+import { navItems } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Header = () => {
   return (
-    <>
-      <div className="flex justify-center items-center pb-2 border-b-2 border-gray-100 space-x-4 px-20">
-        <div className="mr-auto">
-          <Image src="/logo-black.png" width={120} height={120} alt="Logo" />
+    <header className="w-full bg-white border-b border-gray-200 shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-4">
+          {/* Left div */}
+          <div className="w-1/4">{/* Content for left div */}</div>
+
+          {/* Center div with logo */}
+          <div className="flex-1 flex justify-center">
+            <Image src="/logo-black.png" width={100} height={100} alt="Logo" />
+          </div>
+
+          {/* Right div */}
+          <div className="w-1/4 flex justify-end">
+            {navItems.map((navItem) => (
+              <Link key={navItem.link} href={navItem.link} className="ml-4">
+                <h1>{navItem.name}</h1>
+              </Link>
+            ))}
+          </div>
         </div>
-        <Link
-          href=""
-          className="flex justify-center items-center space-x-4 pt-4"
-        >
-          <h1 className="font-light p-2 border-transparent border-2 rounded-lg transition ease-in-out hover:border-2  hover:border-black hover:rounded-lg hover:text-white hover:bg-black duration-300 ">
-            Home
-          </h1>
-        </Link>
-        <Link
-          href=""
-          className="flex justify-center items-center space-x-4 pt-4"
-        >
-          <h1 className="font-light p-2 border-transparent border-2 rounded-lg transition ease-in-out hover:border-2  hover:border-black hover:rounded-lg hover:text-white hover:bg-black duration-300 ">
-            About
-          </h1>
-        </Link>
-        <Link
-          href=""
-          className="flex justify-center items-center space-x-4 pt-4"
-        >
-          <h1 className="font-light p-2 border-transparent border-2 rounded-lg transition ease-in-out hover:border-2  hover:border-black hover:rounded-lg hover:text-white hover:bg-black duration-300 ">
-            Shop
-          </h1>
-        </Link>
-        <Link
-          href=""
-          className="flex justify-center items-center space-x-4 pt-4"
-        >
-          <h1 className="font-light p-2 border-transparent border-2 rounded-lg transition ease-in-out hover:border-2  hover:border-black hover:rounded-lg hover:text-white hover:bg-black duration-300 ">
-            Contact
-          </h1>
-        </Link>
       </div>
-    </>
+    </header>
   );
 };
 
