@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { link } from "fs";
 
 const Header = () => {
   return (
@@ -20,12 +21,20 @@ const Header = () => {
           alt="Aala Cart Logo"
         />
         <div>
-          <nav className="inline-flex items-center justify-center gap-5">
-            <a>Home</a>
-            <a>Shop</a>
-            <a>About</a>
-            <a>Contact</a>
-            <Button>Get in touch</Button>
+          <nav className="inline-flex items-center justify-center gap-4">
+            <Button variant={"link"} size={"lg"}>
+              Home
+            </Button>
+            <Button variant={"link"} size={"lg"}>
+              Shop
+            </Button>
+            <Button variant={"link"} size={"lg"}>
+              About
+            </Button>
+            <Button variant={"link"} size={"lg"}>
+              Contact
+            </Button>
+            <Button size={"sm"}>Get in touch</Button>
           </nav>
         </div>
       </div>
