@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { link } from "fs";
+import { ShopDropDown } from "./ShopDropDown";
 
 const Header = () => {
   return (
@@ -25,9 +26,7 @@ const Header = () => {
             <Button variant={"link"} size={"lg"}>
               Home
             </Button>
-            <Button variant={"link"} size={"lg"}>
-              Shop
-            </Button>
+            <ShopDropDown />
             <Button variant={"link"} size={"lg"}>
               About
             </Button>
