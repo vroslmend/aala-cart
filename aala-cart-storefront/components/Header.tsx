@@ -14,7 +14,7 @@ const Header = () => {
           <ArrowRight size={15} />
         </div>
       </div>
-      <div className="w-full inline-flex items-center justify-between py-2 px-10">
+      <div className="w-full inline-flex items-center justify-between py-1 px-10 border-b-2 border-gray-900/20">
         <Image
           src="/logo-light.png"
           width={100}
