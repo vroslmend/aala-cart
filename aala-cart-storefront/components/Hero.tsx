@@ -15,8 +15,8 @@ const Hero = () => {
                   className="rounded-lg"
                   src="/placeholder.jpg"
                   alt="Hero Image"
-                  width={800}
-                  height={800}
+                  width={1600}
+                  height={1600}
                 />
               </div>
               <div className="flex flex-col gap-2 text-left">
@@ -35,29 +35,73 @@ const Hero = () => {
           </div>
         </div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-          <div className="flex flex-col gap-3 pb-3">
-            <div className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"></div>
-            <p className="text-[#1c150d] text-base font-medium leading-normal">
+          <div className="flex flex-col gap-3 pb-3 items-center">
+            <div className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl">
+              <Image
+                className="rounded-lg"
+                src="/placeholder.jpg"
+                alt="Hero Image"
+                width={800}
+                height={800}
+              />
+            </div>
+            <Button
+              variant="link"
+              className="text-[#1c150d] text-base font-medium leading-normal"
+            >
               Unstitched Suits
-            </p>
+            </Button>
           </div>
-          <div className="flex flex-col gap-3 pb-3">
-            <div className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"></div>
-            <p className="text-[#1c150d] text-base font-medium leading-normal">
+          <div className="flex flex-col gap-3 pb-3 items-center">
+            <div className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl">
+              <Image
+                className="rounded-lg"
+                src="/placeholder.jpg"
+                alt="Hero Image"
+                width={800}
+                height={800}
+              />
+            </div>
+            <Button
+              variant="link"
+              className="text-[#1c150d] text-base font-medium leading-normal"
+            >
               Blankets
-            </p>
+            </Button>
           </div>
-          <div className="flex flex-col gap-3 pb-3">
-            <div className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"></div>
-            <p className="text-[#1c150d] text-base font-medium leading-normal">
+          <div className="flex flex-col gap-3 pb-3 items-center">
+            <div className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl">
+              <Image
+                className="rounded-lg"
+                src="/placeholder.jpg"
+                alt="Hero Image"
+                width={800}
+                height={800}
+              />
+            </div>
+            <Button
+              variant="link"
+              className="text-[#1c150d] text-base font-medium leading-normal"
+            >
               Shoes
-            </p>
+            </Button>
           </div>
-          <div className="flex flex-col gap-3 pb-3">
-            <div className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"></div>
-            <p className="text-[#1c150d] text-base font-medium leading-normal">
+          <div className="flex flex-col gap-3 pb-3 items-center">
+            <div className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl">
+              <Image
+                className="rounded-lg"
+                src="/placeholder.jpg"
+                alt="Hero Image"
+                width={800}
+                height={800}
+              />
+            </div>
+            <Button
+              variant="link"
+              className="text-[#1c150d] text-base font-medium leading-normal"
+            >
               Shawls
-            </p>
+            </Button>
           </div>
         </div>
       </div>
