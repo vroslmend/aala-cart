@@ -10,6 +10,15 @@ const Hero = () => {
         <div className="@container">
           <div className="@[480px]:p-4">
             <div className="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10">
+              <div>
+                <Image
+                  className="rounded-lg"
+                  src="/placeholder.jpg"
+                  alt="Hero Image"
+                  width={800}
+                  height={800}
+                />
+              </div>
               <div className="flex flex-col gap-2 text-left">
                 <h1 className="text-black text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
                   Saira Collection
